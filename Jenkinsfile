@@ -22,5 +22,13 @@ pipeline {
 			}
 		}
 	}
+	post {
+		always {
+			echo "goodbye!"
+		}
+		failure {
+			echo "hate to fail!"
+		}
+	}
 
 }
