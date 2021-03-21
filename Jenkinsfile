@@ -18,7 +18,7 @@ pipeline {
 		}
 		stage('Deploy') {
 			steps {
-				echo 'Deploying v3, via ${params.name2}'
+				echo "Deploying v3, via ${params.name2}"
 			}
 		}
 	}
