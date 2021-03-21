@@ -22,9 +22,9 @@ pipeline {
 			}
 		}
 	}
-	post {
-		failure {
-			mail to{a546518a@gmail}, subject: "git-practice pipeline failed :("
-		}
-	}
+	#post {
+	#	failure {
+	#		mail to{a546518a@gmail}, subject: "git-practice pipeline failed :("
+	#	}
+	#}
 }
