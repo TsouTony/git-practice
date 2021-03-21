@@ -22,4 +22,12 @@ pipeline {
 			}
 		}
 	}
+	post {
+		always {
+			mail to: a546518a@gmail.com, subject: "Finish one git-practice pipeline!"
+		}
+		failure {
+			mail to: a546518a@gmail, subject: "git-practice pipeline failed :("
+		}
+	}
 }
