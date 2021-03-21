@@ -1,6 +1,9 @@
 pipeline {
 	agent any
 	
+	environment {
+		name = 'dog'
+	}
 	stages {
 		stage('Build') {
 			steps {
@@ -9,7 +12,7 @@ pipeline {
 		}
 		stage('Test') {
 			steps {
-				echo 'Testing v3'
+				echo "Testing v3, name : ${name}"
 			}
 		}
 		stage('Deploy') {
