@@ -24,7 +24,7 @@ pipeline {
 	}
 	post {
 		failure {
-			mail to{ a546518a@gmail, subject: "git-practice pipeline failed :("
+			mail to{a546518a@gmail}, subject: "git-practice pipeline failed :("
 		}
 	}
 }
