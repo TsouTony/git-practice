@@ -13,12 +13,12 @@ pipeline {
 		}
 		stage('Test') {
 			steps {
-				echo "Testing v3, via ${params.name1}"
+				echo "Testing v3, via"
 			}
 		}
 		stage('Deploy') {
 			steps {
-				echo 'Deploying v3, via ${params.name2}'
+				echo 'Deploying v3, via'
 			}
 		}
 	}
