@@ -1,10 +1,7 @@
 pipeline {
 	agent any
 	
-	#parameters {
-	#	string(name: 'name1', defaultValue: 'dog', description: 'the name of 1')
-	#	string(name: 'name2', defaultValue: 'cat', description: 'the name of 2')
-	#}
+
 	stages {
 		stage('Build') {
 			steps {
