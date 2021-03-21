@@ -1,7 +1,10 @@
 pipeline {
 	agent any
 	
-
+	parameters {
+		string(name: 'name1', defaultValue: 'dog', description: 'the name of 1')
+		string(name: 'name2', defaultValue: 'cat', description: 'the name of 2')
+	}
 	stages {
 		stage('Build') {
 			steps {
@@ -10,12 +13,12 @@ pipeline {
 		}
 		stage('Test') {
 			steps {
-				echo "Testing v3, via"
+				echo "Testing v3, via ${params.name1}"
 			}
 		}
 		stage('Deploy') {
 			steps {
-				echo 'Deploying v3, via'
+				echo 'Deploying v3, via ${params.name2}'
 			}
 		}
 	}
