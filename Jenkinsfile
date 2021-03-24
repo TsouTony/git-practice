@@ -14,7 +14,7 @@ pipeline {
 		}
 		stage('Test') {
 			steps {
-				echo "Testing v3, via ${params.name1}"
+				echo "Testing v3, via ${gg}"
 			}
 		}
 		stage('Deploy') {
