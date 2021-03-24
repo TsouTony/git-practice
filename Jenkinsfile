@@ -10,7 +10,7 @@ pipeline {
 	stages {
 		stage('Build') {
 			steps {
-				sh "python ./hello.py"
+				bat "python ./hello.py"
 				echo "Building v3, ID : ${env.BUILD_ID} on ${env.JENKINS_URL}"
 			}
 		}
