@@ -1,6 +1,7 @@
 pipeline {
 	agent any
 	
+	def gg = "3be0"
 	parameters {
 		string(name: 'name1', defaultValue: 'dog', description: 'the name of 1')
 		string(name: 'name2', defaultValue: 'cat', description: 'the name of 2')
